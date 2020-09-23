@@ -2,18 +2,19 @@
     background-color: white;
     border-bottom: 1px solid #dbdbdb;
     overflow: hidden;
-    padding: 15px;
+    padding: 25px;
 }
 body
 {
     background-color:white;
 }
+
 #menu-search {
-    
-    margin: 0 45%;
+    position: absolute;
+    left: 650px;
     height: 29px;
     width: 215px;
-    top: 8px;
+    top: 15px;
     border-radius: 3px;
     background: #fafafa;
     border: 1px solid rgba(219, 219, 219, 1);
@@ -21,5 +22,59 @@ body
     background-position-x: 35%;
     background-position-y: 50%;
     background-image: url('images/search.svg');
+    background-repeat: no-repeat;      
+}
+.profile-frame {
+    margin-left: 565px;
+    margin-top:89px;
+}
+.instagram-text {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+#profile-picture{
+    position: absolute;
+    width: 152px;
+    height: 152px;
+    left: 313px;
+    top: 83px;
+}
+.follow-button {
+    position: absolute;
+    width: 96px;
+    height: 28px;
+    left: 658px;
+    top: 90px;
+    background: #4094EF;
+    border-radius: 3px;
+    border-color: #4094EF;
+    text-align: center;
+    color: #ffffff;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 70px;
+}
+.small-button {
+    position: absolute;
+    width: 33px;
+    height: 28px;
+    left: 762px;
+    top: 90px;
+    background: #4094EF;
+    border-radius: 3px;
+    border-color: #4094EF;
+    margin-top: 70px;
+    background-image: url('images/second-button.svg');
     background-repeat: no-repeat;
+    text-align: center;
+    background-position-x: 50%;
+    background-position-y: 50%;
 }

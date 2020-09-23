@@ -2,15 +2,15 @@
     background-color: white;
     border-bottom: 1px solid #dbdbdb;
     overflow: hidden;
-    padding: 24px;
+    padding: 15px;
 }
 body
 {
     background-color:white;
 }
 #menu-search {
-    position: absolute;
-    left: 45%;
+    
+    margin: 0 45%;
     height: 29px;
     width: 215px;
     top: 8px;

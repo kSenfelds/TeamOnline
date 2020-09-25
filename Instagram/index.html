@@ -3,15 +3,31 @@
     <head>
         <link rel="stylesheet" href="style.css" />
     </head>
-    <body style="background-color: rgb(255, 255, 255); margin: 0;">
-        <nav class="menu">
-            <div class="search"><input type="text" name="Search" id="menu-search" placeholder="Search" ></div> 
-        </nav>
+    <header>
+        
+          <div class="logo"><img src="Images/Logo.svg" alt="logo not found"></div>
+          <div class= "sarch-bar"><form action="search"><input type="text" name="Search" id="menu-search" placeholder="Search"></form></div>
+          <div class="menu-items">
+              <form action="home"><a href="#index.html"><img src="Images/Home.svg" alt="home not found"></a></form>
+              <form action="PM"><a href="#PM"><img src="Images/PM.svg" alt="pm not found"></a></form>
+              <form action="compass"><a href="#Compass"><img src="Images/Compass.svg" alt="compass not found"></a></form>
+              <form action="heart"><a href="#heart"><img src="Images/heart.svg" alt="heart not found"></a></form>
+          </div>   
+        
+    </header>
+    <body >
+    <div class="main-frame">
+        
         <div class="profile-frame">
             <div id="profile-picture"><img src="images/profilepic.png" alt="profile not found"></div>
-            <div class="instagram-text">name</div>
-            <div class="instagram-button"><input type="button" class="follow-button" value="Follow"></div>
-            <div class="instagram-button"><input type="button" class="small-button" value=""></div>
+                <div class="profile-content"><div class="instagram-text">name</div>
+                    <div class="profile-buttons">
+                    <form action="instagram-button"><input type="button" class="follow-button" value="Follow"></form> 
+                    <form action="instagram-button"><input type="button" class="small-button" value=""></form>
+                    </div>
+                 </div>
+            
         </div>
+    </div> 
     </body>
 </html>

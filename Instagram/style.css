@@ -1,19 +1,39 @@
-.menu{
-    background-color: white;
-    border-bottom: 1px solid #dbdbdb;
-    overflow: hidden;
-    padding: 25px;
+header {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px black solid;
+    align-content: space-around;
+    justify-content: space-around;
 }
-body
-{
-    background-color:white;
+.logo {
+    display: flex;
+    align-self: start;
+    margin-left: 50px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 50px;
+    
+}
+.menu-items :nth-child(n){
+    margin-left: 10px;
+}
+.search-bar {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 #menu-search {
-    margin: 0 45%;
     height: 29px;
     width: 215px;
-    top: 15px;
     border-radius: 3px;
     background: #fafafa;
     border: 1px solid rgba(219, 219, 219, 1);
@@ -23,34 +43,41 @@ body
     background-image: url('images/search.svg');
     background-repeat: no-repeat;      
 }
+.main-frame {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
 .profile-frame {
-    margin-left: 565px;
-    margin-top:89px;
+    grid-column-start: 2;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    grid-template-columns: 30% 70%;
+    align-content: center;
+    justify-content: start;
+    border-bottom: black 1px solid;
 }
 .instagram-text {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    display: inline-flex;
+    align-self: center;
+    justify-self: start;
     font-family: Helvetica Neue;
     font-style: normal;
     font-weight: 500;
     font-size: 26px;
-    line-height: 32px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
 }
-#profile-picture{
-    position: absolute;
-    width: 152px;
-    height: 152px;
-    left: 313px;
-    top: 83px;
+.profile-buttons {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    display: inline-flex;
+    align-self: center;
+    justify-self: start;
+    margin-left: 100px;
 }
 .follow-button {
-    position: absolute;
     width: 96px;
     height: 28px;
-    left: 658px;
-    top: 90px;
     background: #4094EF;
     border-radius: 3px;
     border-color: #4094EF;
@@ -59,10 +86,9 @@ body
     font-family: Helvetica Neue;
     font-style: normal;
     font-weight: bold;
-    margin-top: 70px;
+    
 }
 .small-button {
-    position: absolute;
     width: 33px;
     height: 28px;
     left: 762px;
@@ -70,10 +96,10 @@ body
     background: #4094EF;
     border-radius: 3px;
     border-color: #4094EF;
-    margin-top: 70px;
     background-image: url('images/second-button.svg');
     background-repeat: no-repeat;
     text-align: center;
     background-position-x: 50%;
     background-position-y: 50%;
 }
+

@@ -35,6 +35,7 @@ header {
     height: 29px;
     width: 215px;
     border-radius: 3px;
+    margin-left: 100px;
     background: #fafafa;
     border: 1px solid rgba(219, 219, 219, 1);
     text-align: center;
@@ -50,11 +51,12 @@ header {
 .profile-frame {
     grid-column-start: 2;
     display: grid;
-    grid-template-rows: 40% 60%;
+    grid-template-rows: 40% 20% 40%;
     grid-template-columns: 30% 70%;
     align-content: center;
     justify-content: start;
     border-bottom: black 1px solid;
+    
 }
 .instagram-text {
     grid-column-start: 2;
@@ -74,6 +76,38 @@ header {
     align-self: center;
     justify-self: start;
     margin-left: 100px;
+}
+.PM-withCircle {
+    position: relative;
+}
+.blue-circle {
+    height: 30px;
+    width: 30px;
+    background-color: rgba(64, 148, 239, 1);
+    border-radius: 50%;
+    display: inline-flex;
+
+}
+.dot {
+    height: 15px;
+  width: 15px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  text-align: center;
+  font-style: Helvetica Neue;
+  color: #fafafa;
+  font-size: small;
+
+
+}
+#profile-picture {
+    display: inline;
+    grid-row-start: 1;
+    grid-row-end:3;
 }
 .follow-button {
     width: 96px;
@@ -101,5 +135,32 @@ header {
     text-align: center;
     background-position-x: 50%;
     background-position-y: 50%;
+}
+.black-dot {
+    height: 5px;
+    width: 5px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+.profile-buttons :nth-child(n) {
+    margin-right: 10px;
+}
+.black-text {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+}
+.profile-followers :nth-child(n) {
+    margin-right: 80px;
+}
+.profile-info {
+    display: grid;
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+.profile-content {
+    align-self: center;
 }
 

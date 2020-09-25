@@ -9,6 +9,13 @@ header {
     align-content: space-around;
     justify-content: space-around;
 }
+
+@font-face {
+    font-family: urbanistFont;
+    src: url(Fonts/Urbanist-Light.woff);
+    /* vairāk info: https://github.com/coreywho/Urbanist un https://www.w3schools.com/css/css3_fonts.asp*/
+  }
+
 .logo {
     display: flex;
     align-self: start;
@@ -56,13 +63,21 @@ header {
     justify-content: start;
     border-bottom: black 1px solid;
 }
+#prof-pic{
+    /* profila bilde */
+    height: 150px;
+    max-height: 170px;
+    object-fit: contain;
+    border-radius: 50%;
+}
 .instagram-text {
     grid-column-start: 2;
     grid-row-start: 1;
     display: inline-flex;
     align-self: center;
     justify-self: start;
-    font-family: Helvetica Neue;
+    font-family: urbanistFont;
+    /* bija: font-family: Helvetica Neue;*/
     font-style: normal;
     font-weight: 500;
     font-size: 26px;

@@ -47,20 +47,26 @@ header {
 .main-frame {
     display: grid;
     grid-template-columns: 20% 60% 20%;
+    height: 100%;
 }
 .profile-frame {
+    height: 40%;
     grid-column-start: 2;
     display: grid;
-    grid-template-rows: 40% 20% 40%;
+    grid-template-rows: 25px 50px 25px 50px 1fr 2fr 25px;
     grid-template-columns: 30% 70%;
     align-content: center;
     justify-content: start;
     border-bottom: black 1px solid;
-    
 }
+.profile-content {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
 .instagram-text {
     grid-column-start: 2;
-    grid-row-start: 1;
+    grid-row-start: 2;
     display: inline-flex;
     align-self: center;
     justify-self: start;
@@ -71,7 +77,7 @@ header {
 }
 .profile-buttons {
     grid-column-start: 2;
-    grid-row-start: 1;
+    grid-row-start: 2;
     display: inline-flex;
     align-self: center;
     justify-self: start;
@@ -106,8 +112,9 @@ header {
 }
 #profile-picture {
     display: inline;
+    padding-top: 25px;
     grid-row-start: 1;
-    grid-row-end:3;
+    grid-row-end:6;
 }
 .follow-button {
     width: 96px;
@@ -152,15 +159,26 @@ header {
     font-weight: 500;
     font-size: 17px;
 }
+.profile-followers {
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
 .profile-followers :nth-child(n) {
     margin-right: 80px;
 }
 .profile-info {
     display: grid;
-    grid-row-start: 3;
+    grid-row-start: 5;
     grid-column-start: 2;
 }
 .profile-content {
     align-self: center;
 }
-
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+}

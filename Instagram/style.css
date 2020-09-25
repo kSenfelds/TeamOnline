@@ -21,6 +21,12 @@ header {
     align-self: start;
     margin-left: 50px;
 }
+#top-icon{
+    margin-top:5px;
+}
+#top-logo{
+    margin-top:5px;
+}
 
 .menu-items {
     display: flex;
@@ -53,6 +59,7 @@ header {
 .main-frame {
     display: grid;
     grid-template-columns: 20% 60% 20%;
+    margin-top: 30px;
 }
 .profile-frame {
     grid-column-start: 2;
@@ -63,6 +70,11 @@ header {
     justify-content: start;
     border-bottom: black 1px solid;
 }
+#profile-picture{
+    margin: 0 30px 0 0;
+}
+
+
 #prof-pic{
     /* profila bilde */
     height: 150px;
@@ -89,32 +101,51 @@ header {
     align-self: center;
     justify-self: start;
     margin-left: 100px;
+    border: none;
+    text-decoration: none;
 }
 .follow-button {
-    width: 96px;
-    height: 28px;
-    background: #4094EF;
+    /* background: #4094EF;
     border-radius: 3px;
     border-color: #4094EF;
     text-align: center;
     color: #ffffff;
     font-family: Helvetica Neue;
     font-style: normal;
-    font-weight: bold;
-    
+    font-weight: bold; */
+    width: 96px;
+    height: 28px;
+    background: #0094f6;
+    background-color: #0094f6;
+    border-radius:3px;
+    border:none;
+	display:inline-block;
+	color:#ffffff;
+	font-family:urbanistFont;
+	font-size:15px;
+	font-weight:bold;
+    text-decoration:none;
+    text-align: center;
+    margin-right:5px;
 }
 .small-button {
     width: 33px;
     height: 28px;
     left: 762px;
     top: 90px;
-    background: #4094EF;
-    border-radius: 3px;
-    border-color: #4094EF;
+    background: #0094f6;
+    background-color: #0094f6;
+    border-radius:3px;
+    border:none;
+	display:inline-block;
+    text-decoration:none;
+    text-align: center;
+    margin-right:5px;
     background-image: url('images/second-button.svg');
     background-repeat: no-repeat;
     text-align: center;
     background-position-x: 50%;
     background-position-y: 50%;
+    margin-right:5px;
 }
 

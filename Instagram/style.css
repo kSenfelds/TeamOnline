@@ -182,3 +182,22 @@ body {
     height: 100%;
     width: 100%;
 }
+.other-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+.picture-1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 50px;
+}
+.black-text1 {
+    display: inline;
+    align-self: flex-end;
+    justify-self: flex-start;
+}
+

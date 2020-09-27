@@ -47,10 +47,12 @@ header {
 .main-frame {
     display: grid;
     grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 35% 65%;
     height: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .profile-frame {
-    height: 40%;
     grid-column-start: 2;
     display: grid;
     grid-template-rows: 25px 50px 25px 50px 1fr 2fr 25px;
@@ -200,4 +202,45 @@ body {
     align-self: flex-end;
     justify-self: flex-start;
 }
+.post-section{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.post-buttons{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: Helvetica Neue;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+}
+.tag{
+    margin-left: 50px;
+    width: 15px;
+    height: 15px;
+}
+.post{
+    width: 15px;
+    height: 15px;
+}
+.button-text{
+    margin-left: 6px;
+}
+.picture-thumbnails{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    
+}
+.picture-thumbnails :nth-child(n){
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.thumbnails{
+    width: 200px;
+    height: 200px;
+}
+
 

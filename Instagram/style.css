@@ -9,23 +9,10 @@ header {
     align-content: space-around;
     justify-content: space-around;
 }
-
-@font-face {
-    font-family: urbanistFont;
-    src: url(Fonts/Urbanist-Light.woff);
-    /* vairāk info: https://github.com/coreywho/Urbanist un https://www.w3schools.com/css/css3_fonts.asp*/
-  }
-
 .logo {
     display: flex;
     align-self: start;
     margin-left: 50px;
-}
-#top-icon{
-    margin-top:5px;
-}
-#top-logo{
-    margin-top:5px;
 }
 
 .menu-items {
@@ -48,6 +35,7 @@ header {
     height: 29px;
     width: 215px;
     border-radius: 3px;
+    margin-left: 100px;
     background: #fafafa;
     border: 1px solid rgba(219, 219, 219, 1);
     text-align: center;
@@ -57,62 +45,91 @@ header {
     background-repeat: no-repeat;      
 }
 .main-frame {
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    margin-top: 30px;
-}
-.profile-frame {
-    grid-column-start: 2;
-    display: grid;
-    grid-template-rows: 40% 60%;
-    grid-template-columns: 30% 70%;
-    align-content: center;
-    justify-content: start;
-    border-bottom: black 1px solid;
-}
-#profile-picture{
-    margin: 0 30px 0 0;
+    display: flex;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
-#prof-pic{
-    /* profila bilde */
-    height: 150px;
-    max-height: 170px;
-    object-fit: contain;
-    border-radius: 50%;
+#profile-content {
+    display: grid;
+    justify-self: center;
+    align-self: flex-start;
+    padding-left: 20%;
+    width: 100%;  
 }
+#profile-content :nth-child(n) {
+    margin-top: 10px;
+}
+
 .instagram-text {
-    grid-column-start: 2;
-    grid-row-start: 1;
     display: inline-flex;
-    align-self: center;
-    justify-self: start;
+    justify-self: center;
     font-family: urbanistFont;
-    /* bija: font-family: Helvetica Neue;*/
+        /* bija: font-family: Helvetica Neue;*/
     font-style: normal;
     font-weight: 500;
     font-size: 26px;
 }
 .profile-buttons {
-    grid-column-start: 2;
-    grid-row-start: 1;
+    display: inline-flex;
+}
+.profile-buttons :nth-child(n) {
     display: inline-flex;
     align-self: center;
-    justify-self: start;
-    margin-left: 100px;
-    border: none;
-    text-decoration: none;
+}
+.PM-withCircle {
+    position: relative;
+}
+/* .blue-circle {
+    height: 30px;
+    width: 30px;
+    background-color: rgba(64, 148, 239, 1);
+    border-radius: 50%;
+    display: inline-flex;
+
+} */
+.dot {
+    height: 15px;
+  width: 15px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  text-align: center;
+  font-style: Helvetica Neue;
+  color: #fafafa;
+  font-size: small;
+
+
+}
+#profile-picture {
+    position: absolute;
+    margin-right: 10%;
+    margin-left: 2%;
+    justify-self: flex-start;
+    align-self: flex-start;
+        
 }
 .follow-button {
-    /* background: #4094EF;
+    /* width: 96px;
+    height: 28px;
+    background: #4094EF;
     border-radius: 3px;
     border-color: #4094EF;
     text-align: center;
     color: #ffffff;
     font-family: Helvetica Neue;
     font-style: normal;
-    font-weight: bold; */
+    font-weight: bold;
+    justify-content: center; */
     width: 96px;
     height: 28px;
     background: #0094f6;
@@ -127,6 +144,7 @@ header {
     text-decoration:none;
     text-align: center;
     margin-right:5px;
+    text-align: center;
 }
 .small-button {
     width: 33px;
@@ -148,4 +166,119 @@ header {
     background-position-y: 50%;
     margin-right:5px;
 }
+.black-dot {
+    height: 5px;
+    width: 5px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-flex;
+}
 
+.profile-buttons :nth-child(n) {
+    margin-right: 10px;
+}
+.black-text {
+    font-family:urbanistFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.profile-followers :nth-child(n) {
+    margin-right: 80px;
+}
+.profile-info {
+    display: grid;
+    grid-template-rows: 20px 50px;    
+}
+
+
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+.other-pictures {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.picture-1 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+
+
+.post-buttons{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family:urbanistFont;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+}
+.tag{
+    margin-left: 50px;
+    width: 15px;
+    height: 15px;
+}
+.post{
+    width: 15px;
+    height: 15px;
+}
+.button-text{
+    margin-left: 6px;
+}
+.picture-thumbnails{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    
+}
+.picture-thumbnails :nth-child(n){
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.thumbnails{
+    width: 200px;
+    height: 200px;
+}
+#prof-pic{
+    /* profila bilde formatēšana*/
+    height: 150px;
+    max-height: 170px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+@font-face {
+    font-family: urbanistFont;
+    src: url(Fonts/Urbanist-Light.woff);
+    /* vairāk info: https://github.com/coreywho/Urbanist un https://www.w3schools.com/css/css3_fonts.asp*/
+  }
+
+#profile-picture{
+    margin: 0 30px 0 0;
+}
+#top-icon{
+    margin-top:5px;
+}
+#top-icon-profile{
+    height:30px;
+    object-fit:inline-flex;
+    margin-top:5px;
+    border-radius: 50%;
+    
+}
+#top-logo{
+    margin-top:5px;
+}
